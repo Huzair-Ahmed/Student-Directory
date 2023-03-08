@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <h1>Enter Students Detail</h1>
+    <br><br>
+    <form action="/process-student" method="post" th:object="${viewstudent}">
+
+        <input type="number" placeholder="Identity Number" th:field="*{id}">   <br><br>
+        <input type="text" placeholder="Name" th:field="*{name}">              <br><br>    
+        <input type="text" placeholder="Father Name" th:field="*{fathername}">       <br><br>
+        <input type="text" placeholder="Semester" th:field="*{semester}">          <br><br>
+        <input type="text" placeholder="Department" th:field="*{department}">        <br><br>
+        <input type="number" placeholder="Current CGPA" th:field="*{cgpa}">      <br><br>
+
+
+        <input type="submit" value="Enter">
+
+    </form>
+
+</body>
+</html>

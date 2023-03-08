@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1> new student entered </h1>
+    <br><br>
+    <span th:text="${shownewstudent.id}"></span> <br> <br>
+    <span th:text="${shownewstudent.name}"></span> <br> <br>
+    <span th:text="${shownewstudent.fathername}"></span> <br> <br>
+    <span th:text="${shownewstudent.semester}"></span> <br> <br>
+    <span th:text="${shownewstudent.department}"></span> <br> <br>
+    <span th:text="${shownewstudent.cgpa}"></span> <br> <br>
+
+    <a th:href="@{enterStudent}">Enter new Student?</a>
+    <br><br>
+    <a th:href="@{registeredStudent}">Student List</a>
+
+</body>
+</html>
