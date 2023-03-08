@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.models;
 
 public class StudentsData {
 
@@ -47,7 +47,5 @@ public String getCgpa() {
 public void setCgpa(String cgpa) {
     this.cgpa = cgpa;
 }
-
-   
     
 }

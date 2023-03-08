@@ -10,5 +10,18 @@
     
     <h1>Registered Students</h1>
 
+    <br><br>
+    <div th:each="student:${students}">
+        <span th:text="*{id}"></span> <br>
+        <span th:text="*{name}"></span> <br>
+        <span th:text="*{fathername}"></span> <br>
+        <span th:text="*{semester}"></span> <br>
+        <span th:text="*{department}"></span> <br>
+        <span th:text="*{cgpa}"></span> <br>
+    </div>
+    <br>
+    <a th:href="@{enterStudent}">Enter new Student?</a>
+    <br>
+
 </body>
 </html>
